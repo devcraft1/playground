@@ -44,4 +44,12 @@ contract mapVsArray {
     function viewBookArray() public view returns (Book[] memory) {
         return arrayOfBook;
     }
+
+    function length() public view returns (uint256) {
+        return (arrayOfBook.length);
+    }
+
+    function remove(uint256 _id) public {
+        delete arrayOfBook[_id];
+    }
 }
