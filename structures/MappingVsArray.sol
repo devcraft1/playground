@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-contract mapVsArray {
+contract mappingVsArray {
     // Book struct
     struct Book {
         string title;
