@@ -1,4 +1,4 @@
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 contract StructWithMapping {
     struct Test {
@@ -20,7 +20,7 @@ contract StructWithMapping {
     }
 
     function setOnlyUint(uint256 _key, uint256 _setValue) public {
-        myMapping[_numb].myUint = _setValue;
+        myMapping[_key].myUint = _setValue;
     }
 
     function setOnlyString(uint256 _key, string calldata _setString) public {
@@ -35,6 +35,10 @@ contract StructWithMapping {
     function getStringValue(uint256 _str) public view returns (string memory) {
         string memory str = myMapping[_str].myString;
         return str;
+    }
+
+    function getAllValue(uint256 _key) public view returns (Test memory) {
+        return myMapping[_key];
     }
 
     function nullifyStruct(uint256 key) public {
