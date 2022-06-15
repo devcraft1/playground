@@ -3,6 +3,4 @@
 
 // import "hardhat/console.sol";
 
-Contract Attacker{
-    
-}
+
