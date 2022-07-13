@@ -6,7 +6,14 @@ contract StructWithMapping {
         string myString;
     }
 
+    enum State {
+        set,
+        retrieve
+    }
+
     mapping(uint256 => Test) public myMapping;
+
+    mapping(bool => State) public state;
 
     function setMapping(
         uint256 key,
