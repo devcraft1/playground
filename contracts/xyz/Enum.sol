@@ -15,8 +15,13 @@ contract State {
     }
 
     // advanced stage for users
-    function advanceUser() public {
+    function setUserToAdvancedStage() public {
         // When advanced conditions are met
         stage = Stage.advanced;
+    }
+
+    function checkStage() public view returns (string memory) {
+        require(stage == Stage.advanced, "User is still amatuer");
+        return "advanced user";
     }
 }

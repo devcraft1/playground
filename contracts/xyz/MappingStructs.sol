@@ -1,19 +1,24 @@
+// SPDX-License-Identifier: GPL-3.0
+
 pragma solidity ^0.8.11;
 
-contract StructWithMapping {
+contract MappingStructs {
     struct Test {
         uint256 myUint;
         string myString;
     }
 
-    enum State {
-        set,
-        retrieve
+    struct StructCointainingAMap {
+        mapping(address => bool) MapInAStruct;
     }
+
+    mapping(address => StructCointainingAMap) myMappingWithAStruct;
 
     mapping(uint256 => Test) public myMapping;
 
-    mapping(bool => State) public state;
+    function setMapInsideAStruct(address _addr) public {
+        myMappingWithAStruct[_addr].MapInAStruct[_addr] = true;
+    }
 
     function setMapping(
         uint256 key,
@@ -32,6 +37,11 @@ contract StructWithMapping {
 
     function setOnlyString(uint256 _key, string calldata _setString) public {
         myMapping[_key].myString = _setString;
+    }
+
+    function getValueOfMapInAStruct(address _addr) public view returns (bool) {
+        bool _bool = myMappingWithAStruct[_addr].MapInAStruct[_addr];
+        return _bool;
     }
 
     function getUintValue(uint256 _key) public view returns (uint256) {

@@ -12,6 +12,7 @@ contract Crud {
         update,
         remove
     }
+
     User[] user;
     State state;
     uint256 id;
