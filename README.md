@@ -4,6 +4,6 @@ This repo encourages hands-on-coding while learning or testing out new features 
 
 # Resources
 
-solidity docs: https://docs.soliditylang.org/en/v0.8.17/
+1. solidity docs: https://docs.soliditylang.org/en/v0.8.17/
 
-solidity by example: https://solidity-by-example.org/
+2. solidity by example: https://solidity-by-example.org/
