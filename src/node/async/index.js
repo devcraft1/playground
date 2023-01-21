@@ -1,5 +1,5 @@
-const readFile = require('./files/readfile');
+const readFile = require('./fileMethods/readfile');
 
-const readFileSync = require('./files/readfilesync');
+const readFileSync = require('./fileMethods/readfilesync');
 
 
