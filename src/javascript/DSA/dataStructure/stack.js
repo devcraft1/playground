@@ -1,5 +1,6 @@
 class Stack {
     constructor(size) {
+        // make properties protected usually prefixed with an underscore _
         this._size = size
         this._stack = []
     }
