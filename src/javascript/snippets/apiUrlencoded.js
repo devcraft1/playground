@@ -1,7 +1,7 @@
 import axios from 'axios';
 import qs from 'qs';
 
-function getApi() {
+async function getApi() {
   try {
     const requestBody = {
       key1: 'value',
