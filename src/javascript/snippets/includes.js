@@ -1,5 +1,5 @@
 const arr = [1, 2, 3, 4, 5, 6];
-if (arr.includes(1)) {
+if (arr.includes(6)) {
   console.log('is included');
 }
 
