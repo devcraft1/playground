@@ -12,7 +12,6 @@ console.log(numbers);
 
 // Spread operators for Object
 // string
-
 const person = {
     name: 'Zelda',
     age: 20,
