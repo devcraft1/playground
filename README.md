@@ -1,5 +1,5 @@
 # Playground
 
 Play with codes.
-Boast your knowledge.
+Learn and boast your knowledge.
 Get snippets easily.
