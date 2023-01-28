@@ -5,42 +5,26 @@
 1. Mouse:
    onclick
    The event occurs when the user clicks on an element
-   oncontextmenu
-   User right-clicks on an element to open a context menu
-   ondblclick
-   The user double-clicks on an element
-   onmousedown
-   User presses a mouse button over an element
-   onmouseenter
-   The pointer moves onto an element
-   onmouseleave
-   Pointer moves out of an element
-   onmousemove
-   The pointer is moving while it is over an element
-   onmouseover
-   When the pointer is moved onto an element or one of its children
-   onmouseout
-   User moves the mouse pointer out of an element or one of its children
-   onmouseup
-   The user releases a mouse button while over an element
+   oncontextmenu: User right-clicks on an element to open a context menu
+   ondblclick: The user double-clicks on an element
+   onmousedown: User presses a mouse button over an element
+   onmouseenter: The pointer moves onto an element
+   onmouseleave: Pointer moves out of an element
+   onmousemove: The pointer is moving while it is over an element
+   onmouseover: When the pointer is moved onto an element or one of its children
+   onmouseout: User moves the mouse pointer out of an element or one of its children
+   onmouseup: The user releases a mouse button while over an element
 
 2. Keyboard:
-   onkeydown
-   When the user is pressing a key down
-   onkeypress
-   The moment the user starts pressing a key
-   onkeyup
-   The user releases a key
+   onkeydown: When the user is pressing a key down
+   onkeypress: The moment the user starts pressing a key
+   onkeyup: The user releases a key
 
 3. Frame:
-   onabort
-   The loading of a media is aborted
-   onbeforeunload
-   Event occurs before the document is about to be unloaded
-   onerror
-   An error occurs while loading an external file
-   onhashchange
-   There have been changes to the anchor part of a URL
+   onabort: The loading of a media is aborted
+   onbeforeunload: Event occurs before the document is about to be unloaded
+   onerror: An error occurs while loading an external file
+   onhashchange: There have been changes to the anchor part of a URL
    onload
    When an object has loaded
    onpagehide
