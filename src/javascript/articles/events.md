@@ -25,142 +25,79 @@
    onbeforeunload: Event occurs before the document is about to be unloaded
    onerror: An error occurs while loading an external file
    onhashchange: There have been changes to the anchor part of a URL
-   onload
-   When an object has loaded
-   onpagehide
-   The user navigates away from a webpage
-   onpageshow
-   When the user navigates to a webpage
-   onresize
-   The document view is resized
-   onscroll
-   An element’s scrollbar is being scrolled
-   onunload
-   Event occurs when a page has unloaded
+   onload: When an object has loaded
+   onpagehide: The user navigates away from a webpage
+   onpageshow: When the user navigates to a webpage
+   onresize: The document view is resized
+   onscroll: An element’s scrollbar is being scrolled
+   onunload: Event occurs when a page has unloaded
 
 4. Form:
-   onblur
-   When an element loses focus
-   onchange
-   The content of a form element changes (for <input>, <select>and <textarea>)
-   onfocus
-   An element gets focus
-   onfocusin
-   When an element is about to get focus
-   onfocusout
-   The element is about to lose focus
-   oninput
-   User input on an element
-   oninvalid
-   An element is invalid
-   onreset
-   A form is reset
-   onsearch
-   The user writes something in a search field (for <input="search">)
-   onselect
-   The user selects some text (for <input> and <textarea>)
-   onsubmit
-   A form is submitted
+   onblur: When an element loses focus
+   onchange: The content of a form element changes (for <input>, <select>and <textarea>)
+   onfocus: An element gets focus
+   onfocusin: When an element is about to get focus
+   onfocusout: The element is about to lose focus
+   oninput: User input on an element
+   oninvalid: An element is invalid
+   onreset: A form is reset
+   onsearch: The user writes something in a search field (for <input="search">)
+   onselect: The user selects some text (for <input> and <textarea>)
+   onsubmit: A form is submitted
 
 5. Drag:
-   ondrag
-   An element is dragged
-   ondragend
-   The user has finished dragging the element
-   ondragenter
-   The dragged element enters a drop target
-   ondragleave
-   A dragged element leaves the drop target
-   ondragover
-   The dragged element is on top of the drop target
-   ondragstart
-   User starts to drag an element
-   ondrop
-   Dragged element is dropped on the drop target
+   ondrag: An element is dragged
+   ondragend: The user has finished dragging the element
+   ondragenter: The dragged element enters a drop target
+   ondragleave: A dragged element leaves the drop target
+   ondragover: The dragged element is on top of the drop target
+   ondragstart: User starts to drag an element
+   ondrop: Dragged element is dropped on the drop target
 
 6. Clipboard:
-   oncopy
-   User copies the content of an element
-   oncut
-   The user cuts an element’s content
-   onpaste
-   A user pastes content in an element
+   oncopy: User copies the content of an element
+   oncut: The user cuts an element’s content
+   onpaste: A user pastes content in an element
 
 7. Media:
-   onabort
-   Media loading is aborted
-   oncanplay
-   The browser can start playing media (e.g. a file has buffered enough)
-   oncanplaythrough
-   When browser can play through media without stopping
-   ondurationchange
-   The duration of the media changes
-   onended
-   The media has reached its end
-   onerror
-   Happens when an error occurs while loading an external file
-   onloadeddata
-   Media data is loaded
-   onloadedmetadata
-   Meta Metadata (like dimensions and duration) are loaded
-   onloadstart
-   Browser starts looking for specified media
-   onpause
-   Media is paused either by the user or automatically
-   onplay
-   The media has been started or is no longer paused
-   onplaying
-   Media is playing after having been paused or stopped for buffering
-   onprogress
-   Browser is in the process of downloading the media
-   onratechange
-   The playing speed of the media changes
-   onseeked
-   User is finished moving/skipping to a new position in the media
-   onseeking
-   The user starts moving/skipping
-   onstalled
-   The browser is trying to load the media but it is not available
-   onsuspend
-   Browser is intentionally not loading media
-   ontimeupdate
-   The playing position has changed (e.g. because of fast forward)
-   onvolumechange
-   Media volume has changed (including mute)
-   onwaiting
-   Media paused but expected to resume (for example, buffering)
-   Animation
-   animationend
-   A CSS animation is complete
-   animationiteration
-   CSS animation is repeated
-   animationstart
-   CSS animation has started
+   onabort: Media loading is aborted
+   oncanplay: The browser can start playing media (e.g. a file has buffered enough)
+   oncanplaythrough: When browser can play through media without stopping
+   ondurationchange: The duration of the media changes
+   onended: The media has reached its end
+   onerror: Happens when an error occurs while loading an external file
+   onloadeddata: Media data is loaded
+   onloadedmetadata: Meta Metadata (like dimensions and duration) are loaded
+   onloadstart: Browser starts looking for specified media
+   onpause: Media is paused either by the user or automatically
+   onplay: The media has been started or is no longer paused
+   onplaying: Media is playing after having been paused or stopped for buffering
+   onprogress: Browser is in the process of downloading the media
+   onratechange: The playing speed of the media changes
+   onseeked: User is finished moving/skipping to a new position in the media
+   onseeking: The user starts moving/skipping
+   onstalled: The browser is trying to load the media but it is not available
+   onsuspend: Browser is intentionally not loading media
+   ontimeupdate: The playing position has changed (e.g. because of fast forward)
+   onvolumechange: Media volume has changed (including mute)
+   onwaiting: Media paused but expected to resume (for example, buffering)
 
-8. Other:
-   transitionend
-   Fired when a CSS transition has completed
-   onmessage
-   A message is received through the event source
-   onoffline
-   Browser starts to work offline
-   ononline
-   The browser starts to work online
-   onpopstate
-   When the window’s history changes
-   onshow
-   A <menu> element is shown as a context menu
-   onstorage
-   A Web Storage area is updated
-   ontoggle
-   The user opens or closes the <details> element
-   onwheel
-   Mouse wheel rolls up or down over an element
-   ontouchcancel
-   Screen touch is interrupted
-   ontouchend
-   User finger is removed from a touch screen
-   ontouchmove
-   A finger is dragged across the screen
-   ontouchstart
-   Finger is placed on touch screen
+8. Animation:
+   animationend: A CSS animation is complete
+   animationiteration: CSS animation is repeated
+   animationstart: CSS animation has started
+
+9. Other:
+   transitionend: Fired when a CSS transition has completed
+   onmessage: A message is received through the event source
+   onoffline: Browser starts to work offline
+   ononline: The browser starts to work online
+   onpopstate: When the window’s history changes
+   onshow: A <menu> element is shown as a context menu
+   onstorage: A Web Storage area is updated
+   ontoggle: The user opens or closes the <details> element
+   onwheel: Mouse wheel rolls up or down over an element
+   ontouchcancel: Screen touch is interrupted
+   ontouchend: User finger is removed from a touch screen
+   ontouchmove: A finger is dragged across the screen
+   ontouchstart: Finger is placed on touch screen
