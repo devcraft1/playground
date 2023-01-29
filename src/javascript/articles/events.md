@@ -1,4 +1,4 @@
-## JAVASCRIP EVENTS
+## JAVASCRIPT EVENTS
 
 # Events:
 
