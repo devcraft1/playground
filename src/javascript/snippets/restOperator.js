@@ -1,6 +1,16 @@
-const rest = (...args) => {
-  return;
+
+const params = [1, 2, 3, 4, 5, 56, 6];
+
+function restOperatorFunc(...args) {
+  return args;
 };
 
-const x = [1, 2, 3, 4, 5, 56, 6];
-console.log(rest(...x));
+console.log(restOperatorFunc(...params));
+
+
+function restOperatorFunc2(...args) {
+  return args.reduce((acc, curr) => acc + curr);
+};
+
+console.log(restOperatorFunc2(...params));
+
