@@ -1,52 +1,52 @@
 class Stack {
-    constructor(size) {
-        // make properties protected usually prefixed with an underscore _
-        this._size = size
-        this._stack = []
+  constructor(size) {
+    // make properties protected usually prefixed with an underscore _
+    this._size = size
+    this._stack = []
+  }
+
+  isFull() {
+    return (this._stack.length === this._size)
+  }
+
+  isEmpty() {
+    return (this._stack.length === 0)
+  }
+
+  push(item) {
+    if (!this.isFull()) {
+      this._stack.push(item)
+
+      return true
     }
 
-    isFull() {
-        return (this._stack.length === this._size)
+    return false
+  }
+
+  pop() {
+    if (!this.isEmpty()) {
+      const index = this._stack.indexOf(this._stack[this._stack.length - 1])
+      if (index > -1) {
+        this._stack.splice(index, 1)
+      }
+
+      return true
     }
 
-    isEmpty() {
-        return (this._stack.length === 0)
+    return false
+  }
+
+  peek() {
+    if (!this.isEmpty()) {
+      return this._stack[this._stack.length - 1]
     }
 
-    push(item) {
-        if (!this.isFull()) {
-            this._stack.push(item)
+    return 'empty'
+  }
 
-            return true
-        }
-
-        return false
-    }
-
-    pop() {
-        if (!this.isEmpty()) {
-            const index = this._stack.indexOf(this._stack[this._stack.length - 1])
-            if (index > -1) {
-                this._stack.splice(index, 1)
-            }
-
-            return true
-        }
-
-        return false
-    }
-
-    peek() {
-        if (!this.isEmpty()) {
-            return this._stack[this._stack.length - 1]
-        }
-
-        return 'empty'
-    }
-
-    getStack() {
-        return this._stack
-    }
+  getStack() {
+    return this._stack
+  }
 }
 
 let stack = new Stack(3)
