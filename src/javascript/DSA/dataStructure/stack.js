@@ -16,10 +16,8 @@ class Stack {
   push(item) {
     if (!this.isFull()) {
       this._stack.push(item)
-
       return true
     }
-
     return false
   }
 
@@ -29,10 +27,8 @@ class Stack {
       if (index > -1) {
         this._stack.splice(index, 1)
       }
-
       return true
     }
-
     return false
   }
 
@@ -40,7 +36,6 @@ class Stack {
     if (!this.isEmpty()) {
       return this._stack[this._stack.length - 1]
     }
-
     return 'empty'
   }
 
