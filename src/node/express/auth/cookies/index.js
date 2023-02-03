@@ -36,7 +36,8 @@ app.use((err, req, res, next) => {
     res.send("CSRF attack detected!")
 })
 
-app.listen((port) => {
-    port = 3000
-    console.log(`Server running on port http://localhost:${port}`)
-})
+const port = 3000
+
+app.listen(port, () => {
+    console.log(`serve at http://localhost:${port}`);
+});
