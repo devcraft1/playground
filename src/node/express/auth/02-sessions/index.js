@@ -6,23 +6,23 @@ const app = express()
 app.use(express.urlencoded({ extended: false }))
 
 app.use(
-    session({
-        // You could actually store your secret in your .env file - but to keep this example as simple as possible...
-        secret: "supersecret difficult to guess string",
-        cookie: {},
-        resave: false,
-        saveUninitialized: false
-    })
+  session({
+    // You could actually store your secret in your .env file - but to keep this example as simple as possible...
+    secret: "supersecret difficult to guess string",
+    cookie: {},
+    resave: false,
+    saveUninitialized: false
+  })
 )
 
 app.use(csurf())
 
 app.get("/", (req, res) => {
-    let name = "Guest"
+  let name = "Guest"
 
-    if (req.session.user) name = req.session.user
+  if (req.session.user) name = req.session.user
 
-    res.send(`
+  res.send(`
   <h1>Welcome, ${name}</h1>
   <form action="/choose-name" method="POST">
     <input type="text" name="name" placeholder="Your name" autocomplete="off">
@@ -37,16 +37,14 @@ app.get("/", (req, res) => {
 })
 
 app.post("/choose-name", (req, res) => {
-    req.session.user = req.body.name.trim()
-    res.send(`<p>Thank you</p> <a href="/">Back home</a>`)
+  req.session.user = req.body.name.trim()
+  res.send(`<p>Thank you</p> <a href="/">Back home</a>`)
 })
 
 app.post("/logout", (req, res) => {
-    req.session.destroy(err => {
-        res.redirect("/")
-    })
+  req.session.destroy(err => {
+    res.redirect("/")
+  })
 })
-const port = 3000
-app.listen(port, () => {
-    console.log(`serve at http://localhost:${port}`);
-});
+
+app.listen(3000)
