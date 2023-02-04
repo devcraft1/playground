@@ -31,13 +31,11 @@ app.post("/transfer-money", csrfProtection, (req, res) => {
 
 app.use((err, req, res, next) => {
     if (err.code !== "EBADCSRFTOKEN") return next(err)
-
     res.status(403)
     res.send("CSRF attack detected!")
 })
 
 const port = 3000
-
 app.listen(port, () => {
     console.log(`serve at http://localhost:${port}`);
 });
