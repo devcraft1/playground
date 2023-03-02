@@ -6,6 +6,8 @@ contract ChildContract is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
+    receive() external payable {}
+
     constructor(string memory _name, string memory _symbol)
         ERC721(_name, _symbol)
     {}
