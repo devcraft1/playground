@@ -8,6 +8,8 @@ contract ChildContract is ERC721URIStorage {
 
     receive() external payable {}
 
+    fallback() external payable {}
+
     constructor(string memory _name, string memory _symbol)
         ERC721(_name, _symbol)
     {}
