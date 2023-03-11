@@ -1,3 +1,3 @@
-mongo db
+<!-- mongo db -->
 
 MongoDB is a cross-platform, document-oriented database. It is classified as a NoSQL database, which means that it does not rely on the traditional table-based relational database structure. Instead, MongoDB stores data in JSON-like documents with dynamic schemas, making the integration of data in applications easier and faster. MongoDB is a popular choice for web applications, as it offers high performance, high availability, and automatic scaling.
