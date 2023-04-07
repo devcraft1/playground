@@ -1,4 +1,4 @@
-<!-- ## JAVASCRIPT EVENTS
+## JAVASCRIPT EVENTS
 
 # Events:
 
@@ -100,4 +100,4 @@
    ontouchcancel: Screen touch is interrupted
    ontouchend: User finger is removed from a touch screen
    ontouchmove: A finger is dragged across the screen
-   ontouchstart: Finger is placed on touch screen -->
+   ontouchstart: Finger is placed on touch screen.
