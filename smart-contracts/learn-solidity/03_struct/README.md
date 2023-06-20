@@ -1,1 +1,0 @@
-# Struct in Soldity

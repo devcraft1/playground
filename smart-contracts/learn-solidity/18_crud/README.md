@@ -1,3 +1,0 @@
-# Address datatype
-
-# IN COMPLETE
